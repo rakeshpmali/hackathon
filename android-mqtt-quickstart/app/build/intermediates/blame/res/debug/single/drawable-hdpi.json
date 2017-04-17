@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/drawable-hdpi/arrow.png",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/drawable-hdpi/arrow.png"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    }
+]

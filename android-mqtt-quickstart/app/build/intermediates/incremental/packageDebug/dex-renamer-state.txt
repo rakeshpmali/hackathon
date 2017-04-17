@@ -1,0 +1,7 @@
+#Mon Apr 17 08:35:54 IST 2017
+base.0=/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e5649646824a536b7c17d78add4ca59b25c04797
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_5b04e106f59c973fcf6c86c89fbfa959e4b50ec1/classes.dex
+base.1=/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_5b04e106f59c973fcf6c86c89fbfa959e4b50ec1
+file.0=/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e5649646824a536b7c17d78add4ca59b25c04797/classes.dex

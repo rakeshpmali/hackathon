@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/layout/client_connections.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/layout/client_connections.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/layout/activity_subscribe.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/layout/activity_subscribe.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/layout/activity_advanced.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/layout/activity_advanced.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/layout/connection_text_view.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/layout/connection_text_view.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/layout/filedialogitem.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/layout/filedialogitem.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/layout/activity_connection_details.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/layout/activity_connection_details.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/layout/activity_new_connection.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/layout/activity_new_connection.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/layout/list_view_text_view.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/layout/list_view_text_view.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/layout/activity_publish.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/layout/activity_publish.xml"
+    }
+]

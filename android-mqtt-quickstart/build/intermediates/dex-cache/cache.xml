@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/manoj/Downloads/android-mqtt-quickstart/app/libs/org.eclipse.paho.client.mqttv3-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f62da4d2ad7345284cdd1030fb924a47529778f8">
+        <dex dex="/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/2/org.eclipse.paho.client.mqttv3-1.0.2_024d1642eae88df93cd58dbfcbfd14ca4acba3ef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/manoj/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-19.1.0_7ae440a982e10b6190ad78322b38db328a4ceb98/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="115d5249b12bccb502c72f7aa5c2a18a68c38d16">
+        <dex dex="/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e5649646824a536b7c17d78add4ca59b25c04797/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_5b04e106f59c973fcf6c86c89fbfa959e4b50ec1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/manoj/Downloads/android-mqtt-quickstart/app/libs/org.eclipse.paho.android.service-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="40bf368bd65dc9b5e7b0719ac3ba25cc010cc685">
+        <dex dex="/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/2/org.eclipse.paho.android.service-1.0.2_07eb5369afcbf1b67a7306218fd1c24262ae672d/classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/menu/activity_publish_disconnected.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/menu/activity_publish_disconnected.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/menu/activity_publish.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/menu/activity_publish.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/menu/activity_connection_details.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/menu/activity_connection_details.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/menu/activity_subscribe.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/menu/activity_subscribe.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/menu/activity_subscribe_disconnected.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/menu/activity_subscribe_disconnected.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/menu/activity_new_connection.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/menu/activity_new_connection.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/menu/activity_advanced.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/menu/activity_advanced.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/menu/activity_last_will.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/menu/activity_last_will.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/menu/activity_connections.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/menu/activity_connections.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/menu/activity_connections_logging.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/menu/activity_connections_logging.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/menu/activity_connection_details_disconnected.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/menu/activity_connection_details_disconnected.xml"
+    },
+    {
+        "merged": "/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/res/merged/debug/menu/activity_client_connections_contextual.xml",
+        "source": "/home/manoj/Downloads/android-mqtt-quickstart/app/src/main/res/menu/activity_client_connections_contextual.xml"
+    }
+]

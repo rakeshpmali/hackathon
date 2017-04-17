@@ -1,0 +1,10 @@
+#Mon Apr 17 08:35:53 IST 2017
+renamed.2=classes.dex
+renamed.1=classes2.dex
+renamed.0=classes3.dex
+base.2=/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/2/org.eclipse.paho.client.mqttv3-1.0.2_024d1642eae88df93cd58dbfcbfd14ca4acba3ef
+base.1=/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/2/org.eclipse.paho.android.service-1.0.2_07eb5369afcbf1b67a7306218fd1c24262ae672d
+base.0=/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-19.1.0_7ae440a982e10b6190ad78322b38db328a4ceb98
+file.2=/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/2/org.eclipse.paho.client.mqttv3-1.0.2_024d1642eae88df93cd58dbfcbfd14ca4acba3ef/classes.dex
+file.1=/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/2/org.eclipse.paho.android.service-1.0.2_07eb5369afcbf1b67a7306218fd1c24262ae672d/classes.dex
+file.0=/home/manoj/Downloads/android-mqtt-quickstart/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-19.1.0_7ae440a982e10b6190ad78322b38db328a4ceb98/classes.dex
