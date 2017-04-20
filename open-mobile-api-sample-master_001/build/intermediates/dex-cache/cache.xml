@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\Android\Projects\Rushikesh\open-mobile-api-sample-master_001\app\libs\org.simalliance.openmobileapi.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eac91d4b72a1acd890c10398ee6b6a83b96aadce">
+        <dex dex="E:\Android\Projects\Rushikesh\open-mobile-api-sample-master_001\app\build\intermediates\transforms\dex\debug\folders\1000\2\org.simalliance.openmobileapi_1c271fd3f1f1846432516a4927b4da7f2b69cbcb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\Projects\Rushikesh\open-mobile-api-sample-master_001\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="787304f2f07c570694d64aff8d3c285736c502de">
+        <dex dex="E:\Android\Projects\Rushikesh\open-mobile-api-sample-master_001\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_24abdb08891f6772998842f6bc33ed44375d8bb0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\Projects\Rushikesh\open-mobile-api-sample-master_001\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb8af3d3075a42aba841850c1486070987eb1dc6">
+        <dex dex="E:\Android\Projects\Rushikesh\open-mobile-api-sample-master_001\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ece7d566b5d0267819c2ce947d663e2113526bcb\classes.dex" />
+    </item>
+
+</items>
