@@ -201,7 +201,7 @@ void setup_wifi() {
 
   Serial.println("");
   Serial.println("WiFi connected");
-  Serial.println("IP address: ");
+  Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
 }
 
@@ -243,15 +243,21 @@ void publishHumidity() {
   float h = dht.readHumidity();
   // Check if any reads failed and exit early (to try again).
   if (isnan(h)) {
+#ifdef SERIAL_DEBUG
     Serial.println("Failed to read from DHT sensor!");
+#else
+    Serial.print("--");
+#endif
   } else {
     dtostrf(h, 2, 0, msg);
-    Serial.print("Publish message: ");
-    Serial.println(msg);
+    //Serial.print("Publish message: ");
+    //Serial.println(msg);
+    Serial.print(msg);
     g_apduTx[DATA_OFFSET] = msg[0];
     g_apduTx[DATA_OFFSET + 1] = msg[1];
     g_apduTx[INS] = INS_ENCRYPTION;
     send_iso_case_4(g_apduTx, &rxLen, g_rxData);
+#ifdef SERIAL_DEBUG
     {
       unsigned int i;
       
@@ -260,7 +266,7 @@ void publishHumidity() {
 
       Serial.println("...end");
     }
-    
+#endif    
     if (AES_BLOCKSIZE == rxLen) 
       client.publish("Humidity", (const char*)g_rxData, rxLen);
     else
@@ -275,15 +281,22 @@ void publishTemperature() {
   float t = dht.readTemperature();
   // Check if any reads failed and exit early (to try again).
   if (isnan(t)) {
+#ifdef SERIAL_DEBUG
     Serial.println("Failed to read from DHT sensor!");
+#else
+    Serial.print("--;");
+#endif
   } else {
     dtostrf(t, 2, 0, msg);
-    Serial.print("Publish message: ");
-    Serial.println(msg);
+    //Serial.print("Publish message: ");
+    //Serial.println(msg);
+    Serial.print(msg);
+    Serial.print(";");
     g_apduTx[DATA_OFFSET] = msg[0];
     g_apduTx[DATA_OFFSET + 1] = msg[1];
     g_apduTx[INS] = INS_ENCRYPTION;
     send_iso_case_4(g_apduTx, &rxLen, g_rxData);
+#ifdef SERIAL_DEBUG
     {
       unsigned int i;
       for(i = 0; i < rxLen; i++)
@@ -291,7 +304,7 @@ void publishTemperature() {
 
       Serial.println("...end");
     }
-    
+#endif    
     if (AES_BLOCKSIZE == rxLen) 
       client.publish("Temperature", (const char*)g_rxData, rxLen);
     else
@@ -306,7 +319,7 @@ void reconnect() {
     // Attempt to connect
     if (client.connect("ESP8266DHT")) {
       Serial.println("connected");
-      publishTemperature();
+      //publishTemperature();
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
@@ -329,5 +342,6 @@ void loop() {
     toggleInbuiltLed();
     publishTemperature();
     publishHumidity();
+    Serial.println("");
   }
 }
