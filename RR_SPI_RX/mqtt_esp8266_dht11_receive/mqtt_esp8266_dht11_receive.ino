@@ -66,7 +66,10 @@ char msg[50];
 int value = 0;
 
 
-int ledState = HIGH;     
+int ledState = HIGH;
+
+unsigned char setTemp = 0xFF;
+unsigned char prevTemp = 0x00;
 
 unsigned long previousMillis = 0;
 const long interval = 1000;
@@ -190,24 +193,49 @@ void setup_wifi() {
 
 void callback(char* topic, byte* payload, unsigned int length) {
   unsigned int rxLen;
-  
-  if (AES_BLOCKSIZE == length) {
-    Serial.print("Message arrived [");
-    Serial.print(topic);
-    Serial.print("] "); 
-    for (int i = 0; i < length; i++) {
-#ifdef SERIAL_DEBUG 
-      Serial.print((char)payload[i], HEX);
-#endif    
-      g_apduTx[DATA_OFFSET + i] = payload[i];
+  unsigned char currTemp = 0;
+
+  Serial.print("Message arrived [");
+  Serial.print(topic);
+  Serial.print("]: ");
+  if(memcmp((const void *)topic, (const void *)"Temperature", 11) == 0) {   
+    if (AES_BLOCKSIZE == length) {
+      for (int i = 0; i < length; i++) {
+  #ifdef SERIAL_DEBUG 
+        Serial.print((char)payload[i], HEX);
+  #endif    
+        g_apduTx[DATA_OFFSET + i] = payload[i];
+      }
+      send_iso_case_4(g_apduTx, &rxLen, g_rxData);
+      Serial.print(g_rxData[0] - '0');
+      Serial.println(g_rxData[1] - '0');
+      currTemp = (g_rxData[0] - '0') << 4;
+      currTemp |= (g_rxData[1] - '0');
+
+      if ((setTemp != 0xFF) && (currTemp != prevTemp)) {
+        if(currTemp > setTemp) {
+          Serial.println("Turn ON the Relay");
+        } else {
+          Serial.println("Turn OFF the Relay");        
+        }
+      }
+      prevTemp = currTemp;
+    } else {
+      Serial.println("Incorrect Msg Length!!!");           
     }
+  } else if (memcmp((const void *)topic, (const void *)"SetTemp", 7) == 0) {
+    Serial.print((char)(payload[0] - '0'), HEX);
+    Serial.print((char)(payload[1] - '0'), HEX);
     Serial.println();
-    send_iso_case_4(g_apduTx, &rxLen, g_rxData);
-    Serial.print("Temperature: ");
-    Serial.print(g_rxData[0] - '0');
-    Serial.println(g_rxData[1] - '0');
+    setTemp = (payload[0] - '0') << 4;
+    setTemp |= (payload[1] - '0');
+    if(prevTemp > setTemp) {
+      Serial.println("Turn ON the Relay");
+    } else {
+      Serial.println("Turn OFF the Relay");        
+    }
   } else {
-    Serial.println("Incorrect Msg Length!!!");    
+    Serial.println();
   }
 }
 
@@ -228,6 +256,7 @@ void reconnect() {
     if (client.connect("ESP8266TempRx")) {
       Serial.println("connected");
       client.subscribe("Temperature");
+      client.subscribe("SetTemp");
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
