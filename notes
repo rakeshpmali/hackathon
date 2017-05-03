@@ -6,3 +6,11 @@ http://support.gemalto.com/fileadmin/user_upload/IAM/FAQ/How_to_install_the_PC-L
 https://tools.ietf.org/html/rfc7252
 
 https://github.com/1248/microcoap
+
+Variant: debug
+Config: debug
+Store: /home/ilab1/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: 5A:26:DB:51:4B:FC:79:DE:62:6B:60:79:4A:32:77:D6
+SHA1: 98:48:88:03:58:0A:9E:3E:B3:EC:C9:E3:71:12:1F:13:31:80:81:13
+Valid until: Saturday, 6 April, 2047
